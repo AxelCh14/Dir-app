@@ -18,5 +18,12 @@ module.exports = {
       "path": "./src/images/"
     },
     __key: "images"
+  }, "gatsby-plugin-netlify", {
+    resolve: "gatsby-plugin-netlify",
+    options: {
+      mergeSecurityHeaders: false, // boolean to turn off the default security headers
+      mergeCachingHeaders: false, // boolean to turn off the default caching headers
+      generateMatchPathRewrites: false, // boolean to turn off automatic creation of redirect rules for client only paths
+    },
   }]
 };
