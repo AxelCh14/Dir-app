@@ -25,5 +25,9 @@ module.exports = {
       mergeCachingHeaders: false, // boolean to turn off the default caching headers
       generateMatchPathRewrites: false, // boolean to turn off automatic creation of redirect rules for client only paths
     },
-  }]
+  }],
+  proxy: {
+    prefix: "/api",
+    url: "http://localhost:3000", // URL de la API RESTful
+  },
 };
